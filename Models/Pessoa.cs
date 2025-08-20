@@ -8,10 +8,12 @@ namespace ExemploExplorando.Models
     public class Pessoa // Classe
     {
         private string _nome;
+        private int _idade;
+
         public string Nome
         {
-            get=> _nome.ToUpper(); //Código com 1 única linha utilizar o Body Expressions
-            
+            get => _nome.ToUpper(); //Código com 1 única linha utilizar o Body Expressions
+
 
             set
             {
@@ -22,10 +24,22 @@ namespace ExemploExplorando.Models
 
                 _nome = value;
             }
-        } //Propriedade
+        }
 
 
-        public int Idade { get; set; } //Propriedade
+        public int Idade
+        {
+            get => _idade;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser menor que Zero");
+                }
+
+                _idade = value;
+            }
+        }
 
         public void Apresentar()
         {
