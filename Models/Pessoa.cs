@@ -7,6 +7,17 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa // Classe
     {
+        public Pessoa()
+        {
+
+        }
+        public Pessoa(string nome, string sobrenome) // Construtor
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+
+        }
+
         private string _nome;
         private int _idade;
 
@@ -26,8 +37,8 @@ namespace ExemploExplorando.Models
             }
         }
 
-        public string SobreNome { get; set; }
-        public string NomeCompleto => $"{Nome} {SobreNome}".ToUpper();
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 
 
         public int Idade
