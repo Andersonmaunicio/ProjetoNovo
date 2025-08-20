@@ -10,10 +10,8 @@ namespace ExemploExplorando.Models
         private string _nome;
         public string Nome
         {
-            get
-            {
-                return _nome.ToUpper();
-            }
+            get=> _nome.ToUpper(); //Código com 1 única linha utilizar o Body Expressions
+            
 
             set
             {
