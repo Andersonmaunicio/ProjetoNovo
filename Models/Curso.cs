@@ -32,7 +32,7 @@ namespace ExemploExplorando.Models
             for (int count = 0; count < Alunos.Count; count++)
             {
                 //string texto = "Nº " + count + " - " + Alunos [count].NomeCompleto; // Concatenando Strings
-                string texto = $"Nº {count} - {Alunos [count].NomeCompleto}"; // Interpolação de Strings
+                string texto = $"Nº {count + 1} - {Alunos [count].NomeCompleto}"; // Interpolação de Strings
                 Console.WriteLine(texto);
             }
         }
