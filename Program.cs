@@ -1,15 +1,19 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
-
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
-
-foreach (string linha in linhas)
+try // Tenta executar o código a baixo com possível erro
 {
-    Console.WriteLine(linha);
+    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
 }
-
-
+catch (Exception ex) // Apresenta a imagem a baixo, em caso de exception
+{
+    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+}
 
 
 
