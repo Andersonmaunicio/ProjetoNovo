@@ -3,12 +3,19 @@ using System.Globalization;
 
 string dataString = "2025-08-22 10:00";
 
-DateTime.TryParseExact(dataString, // Converte data com possível erro
-                     "yyyy-MM-dd HH:mm",
-                     CultureInfo.InvariantCulture, //Padroniza de acordo com a cultura do país informada
-                     DateTimeStyles.None, out DateTime data); 
+bool sucesso = DateTime.TryParseExact(dataString, // Se verdadeiro converte
+                     "yyyy-MM-dd HH:mm", // Formato esperado
+                     CultureInfo.InvariantCulture, // Padroniza de acordo com a cultura do país informada
+                     DateTimeStyles.None, out DateTime data);
 
-Console.WriteLine(data);
+if (sucesso)
+{
+    Console.WriteLine($"Conversão com sucesso! Data: {data}"); // Caso verdadeiro Apresenta essa mensagem
+}
+else
+{
+    Console.WriteLine($"{dataString} não é uma data válida"); // Apresenta essa mensagem caso seja falso
+}
 
 
 
