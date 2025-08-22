@@ -2,12 +2,9 @@
 using System.Globalization;
 
 
-DateTime data = DateTime.Now; // Fornece Data e Hora
+DateTime data = DateTime.Parse("21/08/2025 23:00"); // Fornece Data e Hora
 
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm")); // Fornece Data e Hora sem minutagem
-
-
-
+Console.WriteLine(data); 
 
 
 
