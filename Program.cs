@@ -5,7 +5,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 decimal valorMonetario = 1582.40M;
 
-Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+Console.WriteLine(valorMonetario.ToString("C2")); // C2 indica duas casas decimais
 
 
 
