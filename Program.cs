@@ -1,19 +1,50 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 
 
-string numero1 = "10"; //resultado Concatenação
-string numero2 = "20"; //resultado Concatenação
+decimal valorMonetario = 1582.40M;
+
+Console.WriteLine($"{valorMonetario:C}");
 
 
-// int numero1 = "10"; // Resultado adição
-// int numero2 = "20"; // Resultado adição
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // string numero1 = "10"; //resultado Concatenação
-// // int numero2 = "20"; //resultado Concatenação
+// string numero2 = "20"; //resultado Concatenação
 
-string resultado = numero1 + numero2;
 
-Console.WriteLine(resultado);
+// // int numero1 = "10"; // Resultado adição
+// // int numero2 = "20"; // Resultado adição
+
+// // string numero1 = "10"; //resultado Concatenação
+// // // int numero2 = "20"; //resultado Concatenação
+
+// string resultado = numero1 + numero2;
+
+// Console.WriteLine(resultado);
 
 
 
