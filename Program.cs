@@ -5,16 +5,16 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 decimal valorMonetario = 1582.40M;
 
-Console.WriteLine(valorMonetario.ToString("C2")); // C2 indica duas casas decimais
+Console.WriteLine(valorMonetario.ToString("N2")); // C2 indica duas casas decimais
+
+double porcentagem = .3421;
+
+Console.WriteLine(porcentagem.ToString("P")); // Porcentagem
 
 
+int numero = 123456;
 
-
-
-
-
-
-
+Console.WriteLine(numero.ToString("##-##-##")); // Casas decimais
 
 
 
