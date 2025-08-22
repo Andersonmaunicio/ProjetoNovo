@@ -1,11 +1,11 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 decimal valorMonetario = 1582.40M;
 
-Console.WriteLine($"{valorMonetario:C}");
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
 
 
