@@ -1,20 +1,52 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
-decimal valorMonetario = 1582.40M;
+DateTime data = DateTime.Now; // Fornece Data e Hora
 
-Console.WriteLine(valorMonetario.ToString("N2")); // C2 indica duas casas decimais
-
-double porcentagem = .3421;
-
-Console.WriteLine(porcentagem.ToString("P")); // Porcentagem
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm")); // Fornece Data e Hora sem minutagem
 
 
-int numero = 123456;
 
-Console.WriteLine(numero.ToString("##-##-##")); // Casas decimais
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+// decimal valorMonetario = 1582.40M;
+
+// Console.WriteLine(valorMonetario.ToString("N2")); // C2 indica duas casas decimais
+
+// double porcentagem = .3421;
+
+// Console.WriteLine(porcentagem.ToString("P")); // Porcentagem
+
+
+// int numero = 123456;
+
+// Console.WriteLine(numero.ToString("##-##-##")); // Casas decimais
 
 
 
