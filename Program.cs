@@ -1,10 +1,14 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
+string dataString = "2025-08-22 10:00";
 
-DateTime data = DateTime.Parse("21/08/2025 23:00"); // Fornece Data e Hora
+DateTime.TryParseExact(dataString, // Converte data com possível erro
+                     "yyyy-MM-dd HH:mm",
+                     CultureInfo.InvariantCulture, //Padroniza de acordo com a cultura do país informada
+                     DateTimeStyles.None, out DateTime data); 
 
-Console.WriteLine(data); 
+Console.WriteLine(data);
 
 
 
