@@ -10,6 +10,16 @@ try // Tenta executar o código a baixo com possível erro
         Console.WriteLine(linha);
     }
 }
+
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro de leitura do arquivo. Arquivo não encontrado. {ex.Message}"); // Erro Não encontra o arquivo
+}
+catch (DirectoryNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro de leitura do arquivo. Caminho da pasta não encontrado. {ex.Message}"); // Erro de caminho da pasta
+}
+
 catch (Exception ex) // Apresenta a imagem a baixo, em caso de exception
 {
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
