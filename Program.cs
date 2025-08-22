@@ -3,7 +3,7 @@ using System.Globalization;
 
 try // Tenta executar o código a baixo com possível erro
 {
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
     foreach (string linha in linhas)
     {
@@ -23,6 +23,10 @@ catch (DirectoryNotFoundException ex)
 catch (Exception ex) // Apresenta a imagem a baixo, em caso de exception
 {
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+}
+finally
+{
+    Console.WriteLine("Chegou até aqui"); // Processo executado Independente de erros
 }
 
 
