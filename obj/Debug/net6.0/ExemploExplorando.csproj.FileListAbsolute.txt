@@ -13,3 +13,5 @@ C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\obj\Debug\net6.0\refint\Exem
 C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.pdb
 C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\obj\Debug\net6.0\ref\ExemploExplorando.dll
+C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Lima\Videos\DIO\Projetos\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.csproj.CopyComplete

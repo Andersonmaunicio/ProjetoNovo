@@ -1,14 +1,48 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
+using Models;
+using Newtonsoft.Json;
+
+Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+Console.WriteLine(serializado);
 
 
-int numero = 20;
-bool ehPar = false;
 
 
-//IF Ternário
-ehPar = numero % 2 == 0;
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar" ));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 20;
+// bool ehPar = false;
+
+
+// //IF Ternário
+// ehPar = numero % 2 == 0;
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar" ));
 
 
 // if (numero % 2 == 0)
