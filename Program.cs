@@ -1,16 +1,50 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
+LeituraArquivo arquivo = new LeituraArquivo();
+var (sucesso, linhasArquivo, QuantidadeLinhas) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-(int, string, string, decimal) tupla = (1, "Anderson", "Lima", 1.80M); // Maneira mais recomendada criar tupla
+if (sucesso)
+{
+    Console.WriteLine("Quantidade linhas do arquivo:" + QuantidadeLinhas);
+    foreach (string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possível ler o arquivo");
+}
 
-// ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
-// var outroExemploTuplaCreate = Tuple.Create(1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
 
-Console.WriteLine($"Id: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int, string, string, decimal) tupla = (1, "Anderson", "Lima", 1.80M); // Maneira mais recomendada criar tupla
+
+// // ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
+// // var outroExemploTuplaCreate = Tuple.Create(1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 
