@@ -1,16 +1,45 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
-using System.Collections;
 using System.Globalization;
 
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
-
-estados.Add("PE", "Pernambuco");
-estados.Add("SP", "São Paulo");
-estados.Add("MG", "Minas Gerais");
+(int, string, string, decimal) tupla = (1, "Anderson", "Lima", 1.80M);
 
 
-Console.WriteLine(estados["MG"]); // Busca por 1 estado
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("PE", "Pernambuco");
+// estados.Add("SP", "São Paulo");
+// estados.Add("MG", "Minas Gerais");
+
+
+// Console.WriteLine(estados["MG"]); // Busca por 1 estado
 
 // foreach (var item in estados)
 // {
