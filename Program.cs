@@ -2,11 +2,11 @@
 using System.Globalization;
 
 LeituraArquivo arquivo = new LeituraArquivo();
-var (sucesso, linhasArquivo, QuantidadeLinhas) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+var (sucesso, linhasArquivo, _) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt"); // _ Utilizado apra discartar informação que não usa
 
 if (sucesso)
 {
-    Console.WriteLine("Quantidade linhas do arquivo:" + QuantidadeLinhas);
+    //Console.WriteLine("Quantidade linhas do arquivo:" + QuantidadeLinhas);
     foreach (string linha in linhasArquivo)
     {
         Console.WriteLine(linha);
