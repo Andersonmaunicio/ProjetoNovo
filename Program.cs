@@ -1,21 +1,50 @@
 ﻿using ExemploExplorando.Models; // Importando o nameSpace
 using System.Globalization;
 
-LeituraArquivo arquivo = new LeituraArquivo();
-var (sucesso, linhasArquivo, _) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt"); // _ Utilizado apra discartar informação que não usa
 
-if (sucesso)
-{
-    //Console.WriteLine("Quantidade linhas do arquivo:" + QuantidadeLinhas);
-    foreach (string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
-}
-else
-{
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+Pessoa p1 = new Pessoa("Anderson", "Lima");
+
+(string nome, string sobrenome) = p1;
+
+Console.WriteLine($"{nome} + {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+// var (sucesso, linhasArquivo, _) =  arquivo.LerArquivo("Arquivos/arquivoLeitura.txt"); // _ Utilizado apra discartar informação que não usa
+
+// if (sucesso)
+// {
+//     //Console.WriteLine("Quantidade linhas do arquivo:" + QuantidadeLinhas);
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 
 
