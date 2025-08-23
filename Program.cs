@@ -2,8 +2,10 @@
 using System.Globalization;
 
 
-(int, string, string, decimal) tupla = (1, "Anderson", "Lima", 1.80M);
+(int, string, string, decimal) tupla = (1, "Anderson", "Lima", 1.80M); // Maneira mais recomendada criar tupla
 
+ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
+var outroExemploTuplaCreate = Tuple.Create(1, "Anderson", "Lima", 1.80M); // Outra forma criar tupla sem nomear objeto
 
 Console.WriteLine($"Id: {tupla.Item1}");
 Console.WriteLine($"Nome: {tupla.Item2}");
